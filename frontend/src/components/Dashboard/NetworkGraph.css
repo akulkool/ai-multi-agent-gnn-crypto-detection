@@ -1,0 +1,99 @@
+.network-graph {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+
+.network-graph__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  background: var(--surface-0);
+  border-bottom: 1px solid var(--border-subtle);
+  gap: var(--space-4);
+}
+
+.network-graph__label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semi);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-caps);
+}
+
+.network-graph__label-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber-500);
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+
+.network-graph__toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.network-graph__stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.network-graph__filter-btn {
+  padding: 4px 12px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-muted);
+  background: var(--surface-1);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+.network-graph__filter-btn:hover {
+  background: var(--surface-2);
+  color: var(--text-secondary);
+}
+
+.network-graph__filter-btn--active {
+  background: var(--red-subtle);
+  color: var(--red-400);
+  border-color: var(--red-subtle-border);
+}
+
+.network-graph__canvas {
+  height: 480px;
+  position: relative;
+}
+
+/* React Flow overrides */
+.react-flow__attribution {
+  background: var(--surface-0) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+}
+.react-flow__attribution a { color: var(--text-muted) !important; font-size: 9px !important; }
+
+.react-flow__controls-button {
+  background: var(--surface-1) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-secondary) !important;
+  fill: var(--text-secondary) !important;
+}
+.react-flow__controls-button:hover {
+  background: var(--surface-2) !important;
+}

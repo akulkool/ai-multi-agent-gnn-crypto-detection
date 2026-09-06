@@ -1,0 +1,58 @@
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.status-indicator--compact .status-indicator__label {
+  display: none;
+}
+
+.status-indicator__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-indicator__label {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-caps);
+}
+
+/* Operational */
+.status-indicator--operational .status-indicator__dot {
+  background: var(--risk-low);
+  animation: dot-pulse 2.5s ease-in-out infinite;
+}
+.status-indicator--operational .status-indicator__label {
+  color: var(--risk-low);
+}
+
+/* Warning */
+.status-indicator--warning .status-indicator__dot {
+  background: var(--amber-500);
+  animation: dot-pulse 1.5s ease-in-out infinite;
+}
+.status-indicator--warning .status-indicator__label {
+  color: var(--amber-500);
+}
+
+/* Error */
+.status-indicator--error .status-indicator__dot {
+  background: var(--red-500);
+  animation: dot-pulse 1s ease-in-out infinite;
+}
+.status-indicator--error .status-indicator__label {
+  color: var(--red-400);
+}
+
+/* Inactive */
+.status-indicator--inactive .status-indicator__dot {
+  background: var(--text-muted);
+}
+.status-indicator--inactive .status-indicator__label {
+  color: var(--text-muted);
+}
