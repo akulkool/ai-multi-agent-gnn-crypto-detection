@@ -55,6 +55,7 @@ cover/
 *.mo
 *.pot
 
+
 # Django stuff:
 *.log
 local_settings.py
@@ -221,3 +222,23 @@ __marimo__/
 node_modules/
 dist/
 
+# CryptoTradeGuard datasets
+data/raw/*.zip
+data/raw/**/*.zip
+
+# Generated processed datasets
+data/processed/*.csv
+
+# ML models
+models/*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
