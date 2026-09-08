@@ -1,0 +1,32 @@
+services:
+
+  postgres:
+    image: postgres:17
+    container_name: cryptotradeguard-postgres
+
+    environment:
+      POSTGRES_USER: crypto_user
+      POSTGRES_PASSWORD: crypto_password
+      POSTGRES_DB: cryptotradeguard
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - cryptotradeguard_postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:8-alpine
+    container_name: cryptotradeguard-redis
+
+    ports:
+      - "6380:6379"
+
+    volumes:
+      - cryptotradeguard_redis_data:/data
+
+volumes:
+
+  cryptotradeguard_postgres_data:
+
+  cryptotradeguard_redis_data:
