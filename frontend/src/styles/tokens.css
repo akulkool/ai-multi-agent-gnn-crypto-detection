@@ -1,0 +1,153 @@
+/* ============================================================
+   DESIGN TOKEN SYSTEM
+   CryptoSentinel — Market Surveillance Platform
+   ============================================================ */
+
+:root {
+  /* ── BACKGROUND ──────────────────────────────────────────── */
+  --bg-base:        #0B0C0E;
+  --bg-deep:        #08090A;
+  --bg-elevated:    #101114;
+  --bg-raised:      #15171A;
+
+  /* ── SURFACE ─────────────────────────────────────────────── */
+  --surface-0:      #17191D;
+  --surface-1:      #1C1E22;
+  --surface-2:      #22252A;
+  --surface-3:      #282B31;
+  --surface-hover:  #2A2D33;
+
+  /* ── BORDER ──────────────────────────────────────────────── */
+  --border-subtle:  #1E2126;
+  --border-default: #2A2D32;
+  --border-strong:  #383C44;
+  --border-focus:   #F59E0B;
+
+  /* ── TEXT ────────────────────────────────────────────────── */
+  --text-primary:   #F3F1ED;
+  --text-secondary: #A8A9AD;
+  --text-muted:     #6F7278;
+  --text-faint:     #4A4D54;
+  --text-inverse:   #0B0C0E;
+
+  /* ── ACCENT: CRIMSON RED (risk / danger) ─────────────────── */
+  --red-900:        #7F1D1D;
+  --red-700:        #B91C1C;
+  --red-600:        #C62828;
+  --red-500:        #E53935;
+  --red-400:        #EF5350;
+  --red-100:        #FEE2E2;
+  --red-subtle:     rgba(229, 57, 53, 0.08);
+  --red-subtle-border: rgba(229, 57, 53, 0.2);
+
+  /* ── ACCENT: AMBER / GOLD (warning / analysis) ───────────── */
+  --amber-900:      #78350F;
+  --amber-700:      #B45309;
+  --amber-600:      #D97706;
+  --amber-500:      #F59E0B;
+  --amber-400:      #FBBF24;
+  --amber-300:      #FCD34D;
+  --amber-subtle:   rgba(245, 158, 11, 0.08);
+  --amber-subtle-border: rgba(245, 158, 11, 0.2);
+
+  /* ── NEUTRAL (low-risk / informational) ──────────────────── */
+  --neutral-700:    #374151;
+  --neutral-500:    #6B7280;
+  --neutral-400:    #9CA3AF;
+  --neutral-300:    #D1D5DB;
+
+  /* ── RISK LEVEL COLORS ───────────────────────────────────── */
+  --risk-low:       #4ADE80;
+  --risk-low-bg:    rgba(74, 222, 128, 0.08);
+  --risk-medium:    #F59E0B;
+  --risk-medium-bg: rgba(245, 158, 11, 0.08);
+  --risk-high:      #F97316;
+  --risk-high-bg:   rgba(249, 115, 22, 0.08);
+  --risk-critical:  #E53935;
+  --risk-critical-bg: rgba(229, 57, 53, 0.08);
+
+  /* ── GRAPH NODE COLORS ───────────────────────────────────── */
+  --node-normal:    #4A5568;
+  --node-medium:    #D97706;
+  --node-high:      #F97316;
+  --node-critical:  #E53935;
+  --node-selected:  #F59E0B;
+  --edge-normal:    #2A2D32;
+  --edge-suspicious:#B91C1C;
+
+  /* ── TYPOGRAPHY ──────────────────────────────────────────── */
+  --font-primary:   'Inter', system-ui, -apple-system, sans-serif;
+  --font-display:   'Manrope', 'Inter', system-ui, sans-serif;
+  --font-mono:      'JetBrains Mono', 'Fira Code', monospace;
+
+  --font-size-xs:   11px;
+  --font-size-sm:   12px;
+  --font-size-base: 14px;
+  --font-size-md:   15px;
+  --font-size-lg:   16px;
+  --font-size-xl:   18px;
+  --font-size-2xl:  22px;
+  --font-size-3xl:  28px;
+  --font-size-4xl:  36px;
+
+  --font-weight-light:  300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi:   600;
+  --font-weight-bold:   700;
+  --font-weight-extra:  800;
+
+  --line-height-tight:  1.2;
+  --line-height-snug:   1.4;
+  --line-height-normal: 1.6;
+  --line-height-relaxed:1.75;
+
+  --letter-spacing-tight: -0.03em;
+  --letter-spacing-snug:  -0.01em;
+  --letter-spacing-wide:  0.04em;
+  --letter-spacing-wider: 0.08em;
+  --letter-spacing-caps:  0.1em;
+
+  /* ── SPACING ─────────────────────────────────────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+
+  /* ── BORDER RADIUS ───────────────────────────────────────── */
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-lg:  8px;
+  --radius-xl:  12px;
+  --radius-full: 9999px;
+
+  /* ── SHADOWS ─────────────────────────────────────────────── */
+  --shadow-sm:   0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md:   0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg:   0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-xl:   0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-red:  0 0 16px rgba(229, 57, 53, 0.15);
+  --shadow-amber:0 0 16px rgba(245, 158, 11, 0.12);
+
+  /* ── ANIMATION ───────────────────────────────────────────── */
+  --duration-fast:   120ms;
+  --duration-normal: 200ms;
+  --duration-slow:   350ms;
+  --duration-page:   280ms;
+  --ease-standard:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --ease-accelerate: cubic-bezier(0.4, 0, 1, 1);
+
+  /* ── LAYOUT ──────────────────────────────────────────────── */
+  --sidebar-width:    224px;
+  --topbar-height:    52px;
+  --content-max-width:1440px;
+}
