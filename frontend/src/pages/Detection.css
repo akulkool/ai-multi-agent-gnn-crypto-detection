@@ -513,3 +513,17 @@
   .detection__hero  { padding: var(--space-6) var(--space-5); }
   .detection__search-row { flex-direction: column; }
 }
+
+.spin {
+  animation: detection-spin 1s linear infinite;
+}
+
+@keyframes detection-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
